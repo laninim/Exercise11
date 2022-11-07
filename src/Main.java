@@ -34,5 +34,7 @@ public class Main {
         myhouse = new House(floorsNumber, address, residentArray);
 
         System.out.printf("House floors: %d \nAddress: %s \nResidents: %s", myhouse.getFloorsNumber(),myhouse.getAddress(), String.join(",",myhouse.getResidentsNames()));
+
+        dataInput.close(); //free resources
     }
 }
